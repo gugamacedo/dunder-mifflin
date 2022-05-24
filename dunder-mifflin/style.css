@@ -1,0 +1,528 @@
+@import url("reset.css");
+@import url("root.css");
+
+body {
+  overflow-x: hidden;
+}
+
+/******** Home ********/
+
+.home {
+  height: 100vh;
+  background-image: url("../img/wallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/******** Home - Header ********/
+
+.home .header {
+  background-color: rgba(0, 48, 133, 0.7);
+  box-shadow: 0 0 15px black;
+}
+
+.home .header .nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.home .header .nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  /* padding: 20px; */
+}
+
+.home .header .nav ul li,
+.home .logo {
+  width: 100px;
+}
+
+.home .header .nav ul a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.home .header .nav ul li:hover {
+  background-color: rgba(0, 0, 10, 0.5);
+}
+
+.home .logo {
+  position: relative;
+  text-transform: uppercase;
+  height: 80px;
+}
+
+.home .logo h1, .home .logo h1 span {
+  color: var(--color-secondary);
+}
+
+.home .logo h1 span {
+  display: block;
+}
+
+.home .logo h1:first-child, .home .logo h1 span:first-child {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.home .logo h1:first-child {
+  text-indent: 16px;
+}
+
+.home .logo h1 span:first-child {
+  position: absolute;
+  top: 33%;
+  text-indent: 0;
+}
+
+.home .logo h1:last-child {
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  top: 75%;
+  letter-spacing: 2px;
+}
+
+.home .logo h1 span:last-child {
+  transform: rotate(90deg);
+  font-weight: 700;
+  position: absolute;
+  left: 78%;
+  top: 40%;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.home > div:last-child {
+  display: flex;
+  height: calc(100vh - 80px);
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.home h2 {
+  position: absolute;
+  bottom: 200px;
+  color: var(--color-secondary);
+  font-weight: 400;
+  font-size: 2rem;
+  text-shadow: 
+  -1px -1px 10px var(--color-primary), 
+  -1px 1px 10px var(--color-primary),      
+   1px -1px 10px var(--color-primary),    
+   1px 1px 10px var(--color-primary);
+  letter-spacing: 2px;
+}
+
+/* ----------------------- Menu Hamburguer -------------------- */
+.header .nav img {
+  display: none;
+}
+
+
+.home .menuMobile {
+  position: fixed;
+  top: 60px;
+  right: -100%;
+  border: 1px groove var(--color-primary);
+  transition: all 700ms ease;
+}
+
+.home .menuMobile ul {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 48, 200);
+  width: 90px;
+  font-size: 14px;
+}
+
+.home .menuMobile ul li {
+  display: flex;
+  justify-content: center;
+
+  list-style: none;
+  padding: 10px 20px;
+  width: 90px;
+}
+
+.home .menuMobile ul a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  padding: 10px 20px;
+}
+
+/******************** About ********************/
+
+.about {
+  height: 100vh;
+  background-color: var(--color-primary);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+}
+
+.about .container div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  width: 33%;
+  height: 100vh;
+}
+
+.about .container div:first-child img {
+  width: 100%;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.about .container div:last-child {
+  width: 66%;
+  margin: 30px 0 30px 50px;
+  color: var(--color-secondary);
+}
+
+.about div:last-child h2, .contact h2 {
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.about div:last-child p {
+  color: var(--color-secondary);
+  font-weight: 400;
+  font-family: var(--font-secondary);
+  line-height: 25px;
+  font-size: 18px;
+}
+
+/******************** Team ********************/
+
+.team {
+  background-color: var(--color-secondary);
+}
+
+.team h2 {
+  padding: 30px 0;
+  text-align: center;
+  color: var(--color-primary);
+  letter-spacing: 1px;
+}
+
+.seasons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 0 30px;
+}
+
+.seasons button {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  width: 40px;
+  margin: 5px;
+  font-size: 12px;
+}
+
+.seasons button:hover {
+  background-color: #001847;
+  color: var(--color-secondary);
+}
+
+.team .gallery {
+  column-count: 4;
+  column-gap: 30px;
+}
+
+.team .gallery.active {
+  padding: 0 0 30px;
+}
+
+.team .gallery div {
+  display: none;
+}
+
+.team .gallery.active img {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 500px;
+  margin-bottom: 5px;
+  box-shadow: 3px 3px 10px var(--color-primary);
+}
+
+.team .gallery.active div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  break-inside: avoid;
+}
+
+.team .gallery.active div figcaption {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0px 0 10px;
+  color: var(--color-primary);
+}
+
+/******************** Contact ********************/
+
+.contact {
+  /* height: 100vh; */
+  background-color: var(--color-primary);
+}
+
+.contact .container h2 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.contact img {
+  display: block;
+  border-radius: 5px;
+  width: 600px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.contact .mike {
+  display: inline;
+}
+
+.contact figcaption {
+  color: var(--color-secondary);
+  font-size: 12px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.contact .mike {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.contact form {
+  padding: 40px;
+}
+
+.contact .personal-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contact .input-wrapper{
+  width: 100%;
+  margin-right: 5%;
+}
+
+.contact .input-wrapper:last-of-type {
+  margin-right: 0;
+}
+
+.contact .input-wrapper label {
+  color: var(--color-secondary);
+  display: block;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.contact .input-wrapper input,
+.contact .input-wrapper select, 
+.contact .input-wrapper textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+
+.contact .input-wrapper option {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+
+.contact .input-wrapper textarea {
+  height: 100px;
+}
+
+button {
+  width: 100px;
+  text-align: center;
+  background-color: var(--color-secondary);
+  margin: 20px 0 100px;
+  color: var(--color-primary);
+}
+
+button:hover {
+  color: black;
+}
+
+/******************** Footer ********************/
+
+footer {
+  background-color: var(--color-secondary);
+  text-align: center;
+  padding: 10px 0;
+  color: var(--color-primary);
+}
+/******************** Design Reponsivo ********************/
+
+@media (max-width: 1200px) {
+  .home h2 {
+    bottom: 30px;
+  }
+
+  .about {
+    height: unset;
+  }
+  .about .container {
+    flex-direction: column-reverse;
+  }
+  .about .container div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    height: unset;
+    padding: 0 30px 30px;
+  }
+  
+  .about .container div:last-child {
+    width: 95%;
+    margin: 30px 0;
+  }
+  .team .gallery {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .home .header {
+    background-color: var(--color-primary);
+  }
+
+  .home h2 {
+    font-size: 1.4rem;
+  }
+
+  .home .header .nav ul li {
+    display: none;
+  }
+  .home .logo h1:first-child, .home .logo h1 span:first-child {
+    font-size: 20px;
+  }
+  
+  .home .logo h1 span:first-child {
+    top: 32%;
+  }
+  
+  .home .logo h1:last-child {
+    font-size: 8px;
+    letter-spacing: 2px;
+    top: 74%;
+  }
+  .home .logo h1 span:last-child {
+    left: 55%;
+    top: 36%;
+    font-size: 8px;
+  }
+
+  .home .logo {
+    height: 60px;
+    padding: 1px;
+  }
+
+  .home > div:last-child {
+    height: calc(100vh - 60px);
+  }
+  
+  /* ----------------------- Menu Hamburguer -------------------- */  
+  .header .nav img {
+    position: fixed;
+    display: inline-block;
+    width: 40px;
+    right: 10px;
+    top: 10px;
+    background-color: rgb(0, 48, 255);
+    border: 2px outset var(--color-primary);
+  }
+  
+  .header .nav img.active {
+    border: 2px inset var(--color-primary);
+  }
+
+  .home .menuMobile.active {
+    right: 0;
+  }
+
+  /* ----------------------- About -------------------- */
+  .about .container div:first-child {
+    display: block;
+  }
+  .about .container div:first-child img {
+    margin: 0 auto 20px;
+  }
+
+  .about .container div:last-child p:last-child {
+    display: none;
+  }
+
+  .about .container div:last-child {
+    margin: 30px 0 10px;
+  }
+
+  .contact .personal-data {
+    display: block;
+  }
+  .contact .personal-data .input-wrapper {
+    margin-top: 20px;
+  }
+  .contact .personal-data .input-wrapper:first-of-type {
+    margin-top: 0;
+  }
+  .contact .mike {
+    width: 30px;
+  }
+
+  .team .gallery {
+    column-count: 2;
+  }
+
+  .seasons {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 390px) {
+  .team .gallery {
+    column-count: 1;
+  }
+
+  .home h2 {
+    font-size: 1.1rem;
+  }
+}
