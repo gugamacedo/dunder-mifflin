@@ -2,13 +2,10 @@ import styled from 'styled-components'
 
 import Header from '../components/Header'
 
-import bgImage from '../assets/team.jpg'
-
 const Home = styled.main`
-  background-image: url(${bgImage.src}); // / essa bagaça é um objeto
+  background-image: url('/assets/background.jpg'); // / essa bagaça é um objeto
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-position: top;
   height: 100vh;
   display: flex;
@@ -31,11 +28,10 @@ const Home = styled.main`
 
   @media (max-width: 576px) {
     background-position: center;
-    justify-content: space-between;
 
     h2 {
-      font-size: 1.4rem;
-      padding: 0 2rem 2rem;
+      font-size: 1.3rem;
+      padding: 0.9rem 2rem 0;
     }
   }
 `

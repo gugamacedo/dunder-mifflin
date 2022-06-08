@@ -6,7 +6,7 @@ import styled, { css } from 'styled-components'
 
 const Heading = styled.header`
   background-color: ${(props) => props.theme.colors.primary};
-  padding: 10px;
+  padding: 5px;
 `
 
 const Menu = styled.div`
@@ -28,13 +28,14 @@ const Menu = styled.div`
       font-family: ${(props) => props.theme.fonts.primary};
 
       :hover {
-        background-color: #001946;
+        background-color: #01213a;
       }
     }
   }
 
   button {
     display: none;
+    border: none;
   }
 
   @media (max-width: 576px) {
@@ -45,7 +46,7 @@ const Menu = styled.div`
     }
 
     div img {
-      height: 60px !important;
+      height: 70px !important;
     }
 
     nav {
@@ -65,14 +66,15 @@ const Menu = styled.div`
       transition: 1s;
       transform: translateY(70px);
 
-      ${({ isMenuMobileToggle }) => isMenuMobileToggle && css`
-        opacity: 1;
-        pointer-events: auto;
-        transform: translateY(0px);
-        
-        height: 100%;
+      ${({ isMenuMobileToggle }) =>
+        isMenuMobileToggle &&
+        css`
+          opacity: 1;
+          pointer-events: auto;
+          transform: translateY(0px);
 
-      `}
+          height: 100vh;
+        `}
     }
   }
 `
@@ -82,35 +84,48 @@ const Header = () => {
 
   const onHandleMenu = () => setMenuMobileToggle(!isMenuMobileToggle)
 
-  /* se tiver problema com scrool no menu mobile, ative esse código
+  // se tiver problema com scrool no menu mobile, ative esse código
   useEffect(() => {
     document.body.style.overflowY = isMenuMobileToggle ? 'hidden' : 'auto'
-  }) */
+  })
 
   return (
     <Heading>
-      <Menu isMenuMobileToggle={isMenuMobileToggle} >
+      <Menu isMenuMobileToggle={isMenuMobileToggle}>
         <div>
-        <Image src="/logo.png" width={120} height={90} quality={100} alt="Dunder Mifflin Logo" className='logo' />
-
+          <Image
+            src="/icons/logo.png"
+            width={190}
+            height={120}
+            quality={100}
+            alt="Dunder Mifflin Logo"
+            className="logo"
+          />
         </div>
-        
+
         <nav>
           <Link href="/">
             <a>HOME</a>
           </Link>
-          <Link href="/staff">
-            <a>★STAFF★</a>
-          </Link>
           <Link href="/about">
             <a>ABOUT</a>
+          </Link>
+          <Link href="/staff">
+            <a>★STAFF★</a>
           </Link>
           <Link href="/contact">
             <a>CONTACT</a>
           </Link>
         </nav>
 
-        <button onClick={onHandleMenu}><Image src="/menu.svg" alt="Menu Toggle" width={30} height={30} /></button>
+        <button onClick={onHandleMenu}>
+          <Image
+            src={!isMenuMobileToggle ? '/icons/openMenu.svg' : '/icons/closeMenu.svg'}
+            alt={!isMenuMobileToggle ? 'Open Menu' : 'Close Menu'}
+            width={40}
+            height={40}
+          />
+        </button>
       </Menu>
     </Heading>
   )

@@ -5,9 +5,13 @@
   - [x] Fazer um menu mobile 
   - [x] Refatorar
 - [ ] Página about
-  - [ ] Montar html
-  - [ ] Estruturar
-  - [ ] Estilizar
+  - [x] Estruturar html
+  - [x] Achar e integrar Slider
+  - [x] Estilizar
+  - [ ] Adaptar Mobile
+    - [ ] Mudar a cor das arrows
+    - [ ] Esticar Slider e sobrepor arrows
+    - [ ] Diminuir imagens, margens e textos
 - [ ] Página Contact
   - [ ] Apenas visual
   - [ ] Parte funcional

@@ -1,147 +1,147 @@
 [
   {
     "name": "Holly Flax",
-    "image": "holly.jpg",
+    "image": "/staff/holly.jpg",
     "seasons": [4, 5, 7]
   },
   {
     "name": "Michael Scott",
-    "image": "michael.jpg",
+    "image": "/staff/michael.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7]
   },
   {
     "name": "Jo Benett",
-    "image": "jo.jpg",
+    "image": "/staff/jo.jpg",
     "seasons": [6, 7]
   },
   {
     "name": "Robert California",
-    "image": "robert.jpg",
+    "image": "/staff/robert.jpg",
     "seasons": [8]
   },
   {
     "name": "Charles Miner",
-    "image": "charles.jpg",
+    "image": "/staff/charles.jpg",
     "seasons": [5]
   },
   {
     "name": "Gabe Lewis",
-    "image": "gabe.jpg",
+    "image": "/staff/gabe.jpg",
     "seasons": [6, 7, 8]
   },
   {
     "name": "Karen Filippelli",
-    "image": "karen.jpg",
+    "image": "/staff/karen.jpg",
     "seasons": [3, 4]
   },
   {
     "name": "Andy Bernard",
-    "image": "andy.jpg",
+    "image": "/staff/andy.jpg",
     "seasons": [3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Erin Hannon",
-    "image": "erin.jpg",
+    "image": "/staff/erin.jpg",
     "seasons": [5, 6, 7, 8, 9]
   },
   {
     "name": "Nellie Bertram",
-    "image": "nellie.jpg",
+    "image": "/staff/nellie.jpg",
     "seasons": [8, 9]
   },
   {
     "name": "David Wallace",
-    "image": "david.jpg",
+    "image": "/staff/david.jpg",
     "seasons": [2, 3, 4, 5, 6, 9]
   },
   {
     "name": "Clark Green",
-    "image": "clark.jpg",
+    "image": "/staff/clark.jpg",
     "seasons": [9]
   },
   {
     "name": "Pete Miller",
-    "image": "pete.jpg",
+    "image": "/staff/pete.jpg",
     "seasons": [9]
   },
   {
     "name": "Dwight Schrute",
-    "image": "dwight.jpg",
+    "image": "/staff/dwight.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Jim Halpert",
-    "image": "jim.jpg",
+    "image": "/staff/jim.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Pam Beesly",
-    "image": "pam.jpg",
+    "image": "/staff/pam.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Jan Levinson",
-    "image": "jan.jpg",
+    "image": "/staff/jan.jpg",
     "seasons": [1, 2, 3, 4, 5]
   },
   {
     "name": "Angela Martin",
-    "image": "angela.jpg",
+    "image": "/staff/angela.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Darryl Philbin",
-    "image": "darryl.jpg",
+    "image": "/staff/darryl.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Ryan Howard",
-    "image": "ryan.jpg",
+    "image": "/staff/ryan.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Kelly Karpor",
-    "image": "kelly.jpg",
+    "image": "/staff/kelly.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Roy Anderson",
-    "image": "roy.jpg",
+    "image": "/staff/roy.jpg",
     "seasons": [1, 2, 3]
   },
   {
     "name": "Oscar Martinez",
-    "image": "oscar.jpg",
+    "image": "/staff/oscar.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Kevin Malone",
-    "image": "kevin.jpg",
+    "image": "/staff/kevin.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Stanley Hudson",
-    "image": "stanley.jpg",
+    "image": "/staff/stanley.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Phyllis Vance",
-    "image": "phyllis.jpg",
+    "image": "/staff/phyllis.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Toby Flenderson",
-    "image": "toby.jpg",
+    "image": "/staff/toby.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Creed Bratton",
-    "image": "creed.jpg",
+    "image": "/staff/creed.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Meredith Palmer",
-    "image": "meredith.jpg",
+    "image": "/staff/meredith.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   }
 ]
