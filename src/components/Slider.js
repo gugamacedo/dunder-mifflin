@@ -5,37 +5,56 @@ import Carousel from 'react-elastic-carousel'
 const SlideShow = styled.div`
   width: 100%;
 
-  .rec-dot_active {
-    background-color: rgba(0, 48, 133, 0.5);
-    box-shadow: ${(props) => props.theme.colors.primary} 0px 0px 1px 3px;
+  .rec.rec-pagination {
+    display: none;
   }
 
-  .rec-dot:hover {
-    box-shadow: ${(props) => props.theme.colors.primary} 0px 0px 1px 3px;
+  .rec.rec-arrow:focus {
+    background-color: rgba(103,58,183,0.1);
+    color: #333;
   }
-
-  .rec.rec-arrow:focus,
+  
   .rec.rec-arrow:enabled:hover {
-    background-color: ${(props) => props.theme.colors.primary};
-    color: ${(props) => props.theme.colors.secondary};
+    background-color: ${(props) => props.theme.colors.primary} !important;
+    color: ${(props) => props.theme.colors.secondary} !important;  
   }
 
-  @media (max-width: 576px) {
-
+  @media (min-width: 1900px) {
     .rec.rec-arrow {
-      height: 40px;
-      width: 40px;
-      min-width: 40px;
-      font-size: 1rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .rec.rec-slider-container, .rec.rec-pagination {
-      margin: -10px;
+      width: 100px;
+      height: 100px;
+      font-size: 3rem;
     }
   }
+
+  @media (max-width: 768px) {
+    .rec.rec-arrow {
+      display: none;
+    }
+
+    .rec.rec-pagination {
+      display: flex;
+    }
+    .rec-dot {
+      margin: 10px;
+    }
+
+    .rec-dot_active {
+      background-color: rgba(0, 48, 133, 0.5);
+      box-shadow: ${(props) => props.theme.colors.primary} 0px 0px 1px 3px !important;
+    }
+
+    .rec-dot:hover,
+    .rec-dot:focus {
+      box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .rec.rec-slider-container,
+    .rec.rec-item-wrapper div {
+      margin: 0;
+    }
+  }
+  
 `
 
 const Slides = styled.div`
@@ -50,49 +69,62 @@ const Slides = styled.div`
   font-size: 4em;
   pointer-events: none;
 
-  @media (max-width: 576px) {
-    height: 250px;
+  @media (min-width: 1900px) {
+    height: 720px;
+    max-width: 1600px;
+  }
+
+  @media (max-width: 1199px) {
+    height: 400px;
+
+    span {
+      height: 100% !important;
+    }
+  }
+
+  @media (max-width: 500px) {
+    height: 225px;
   }
 `
 
 const Slider = () => {
   const items = [
     {
-      path: '/slides/1.jpg',
-      alt: 'Christimas',
-      width: 1500,
-      height: 885,
-    },
-    {
       path: '/slides/6.jpg',
       alt: 'Kill Michael',
-      width: 1720,
-      height: 880,
-    },
-    {
-      path: '/slides/3.jpg',
-      alt: 'Michael Tots',
-      width: 1355,
-      height: 791,
-    },
-    {
-      path: '/slides/2.jpg',
-      alt: 'Michael Scott and Jim Halpert',
-      width: 1366,
-      height: 768,
+      width: 1360,
+      height: 720,
     },
     {
       path: '/slides/4.jpg',
       alt: 'Jim and Dwight',
-      width: 1500,
-      height: 800,
+      width: 1360,
+      height: 720,
+    },
+    {
+      path: '/slides/3.jpg',
+      alt: 'Michael Tots',
+      width: 1304,
+      height: 720,
+    },
+    {
+      path: '/slides/2.jpg',
+      alt: 'Michael Scott and Jim Halpert',
+      width: 1318,
+      height: 720,
+    },
+    {
+      path: '/slides/1.jpg',
+      alt: 'Christimas',
+      width: 1335,
+      height: 720,
     },
     {
       path: '/slides/5.jpg',
       alt: 'Daryl and others',
       width: 1280,
       height: 720,
-    }
+    },
   ]
 
   return (
@@ -106,6 +138,7 @@ const Slider = () => {
               alt={item.alt}
               width={item.width}
               height={item.height}
+              priority={item.alt === 'Kill Michael' ? true : false}
             />
           </Slides>
         ))}

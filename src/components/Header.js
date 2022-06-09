@@ -7,6 +7,10 @@ import styled, { css } from 'styled-components'
 const Heading = styled.header`
   background-color: ${(props) => props.theme.colors.primary};
   padding: 5px;
+
+  @media (min-width: 1900px) {
+    padding: 10px;
+  }
 `
 
 const Menu = styled.div`
@@ -38,6 +42,15 @@ const Menu = styled.div`
     border: none;
   }
 
+  @media (min-width: 1900px) {
+    nav {
+      a {
+        padding: 30px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
   @media (max-width: 576px) {
     button {
       display: inline-block;
@@ -63,7 +76,7 @@ const Menu = styled.div`
 
       opacity: 0;
       pointer-events: none;
-      transition: 1s;
+      transition: 0.7s;
       transform: translateY(70px);
 
       ${({ isMenuMobileToggle }) =>

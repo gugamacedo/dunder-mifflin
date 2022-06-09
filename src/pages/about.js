@@ -17,6 +17,7 @@ const Container = styled.section`
     text-align: center;
     margin: 25px 0;
     font-size: 1.4rem;
+    letter-spacing: 0.5px;
   }
 
   h2 {
@@ -73,17 +74,101 @@ const Container = styled.section`
 
     span img {
       border-radius: 15px;
-      height: 500px !important;
+      height: 450px !important;
       object-fit: cover;
     }
   }
 
-  @media (max-width: 576px) {
-    width: 95%;
+  @media (min-width: 1900px) {
+    padding: 0 0 80px;
+
+    h1 {
+      margin: 30px 0 20px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 80px 0 20px;
+    }
+
+    p {
+      line-height: 2.4rem;
+      font-size: 1.6rem;
+    }
+
+    .historyImgWrapper {
+      margin: 20px 0 40px !important;
+
+      span img {
+        height: 525px !important;
+      }
+    }
+
+    blockquote {
+      padding: 10px 60px;
+      width: fit-content;
+
+      ul li {
+        line-height: 2.4rem;
+        font-size: 1.6rem;
+        margin: 30px 0;
+      }
+    }
+
+    .diversityGrid {
+      gap: 30px;
+      padding: 30px;
+
+      span img {
+        height: 713px !important;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
 
     .containerMobile {
       width: 85%;
       margin: 0 auto;
+    }
+
+    h1 {
+      margin: 15px 0;
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      margin: 40px 0 15px;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .historyImgWrapper {
+      span img {
+        height: 250px !important;
+      }
+    }
+
+    blockquote {
+
+      ul li {
+        font-size: 0.9rem;
+        margin: 10px 0;
+      }
+    }
+
+    .diversityGrid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+
+      span img {
+        height: 250px !important;
+      }
     }
   }
 `
@@ -165,7 +250,7 @@ const About = () => {
 
           <h2>We respect diversity!</h2>
           <div className="diversityGrid">
-            <Image src="/assets/doc-king.png" alt="Card Luther King" width={848} height={598} />
+            <Image src="/assets/doc-king.jpg" alt="Card Luther King" width={855} height={720} />
             <Image src="/assets/doll.jpg" alt="Doll" width={1280} height={720} />
             <Image src="/assets/blind-michael.png" alt="Blind Michael" width={731} height={713} />
             <Image src="/assets/fat-michael.jpg" alt="Fat Michael" width={719} height={720} />
