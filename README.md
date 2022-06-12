@@ -14,9 +14,11 @@
     - [x] Slider Responsivo
     - [x] Diminuir imagens, margens e textos
 - [ ] Página de Personagens
-  - [ ] Montar um grid com todos e estilizar
-  - [ ] Botões de temporadas e função de mudar
-  - [ ] Botão e função de entrar num personagem
+  - [x] Fazer um grid parecido com da NLW Return
+  - [x] Aplicar estilização
+  - [ ] Integrar o `getStaticProps`
+  - [ ] Montar o grid com nossos dados
+  - [ ] Função de entrar num personagem
 - [ ] Página do personagem
   - [ ] ???
 - [ ] Página Contact

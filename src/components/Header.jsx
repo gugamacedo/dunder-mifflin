@@ -123,8 +123,8 @@ const Header = () => {
           <Link href="/about">
             <a>ABOUT</a>
           </Link>
-          <Link href="/staff">
-            <a>★STAFF★</a>
+          <Link href="/team">
+            <a>★TEAM★</a>
           </Link>
           <Link href="/contact">
             <a>CONTACT</a>

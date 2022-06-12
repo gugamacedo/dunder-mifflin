@@ -1,147 +1,147 @@
 [
   {
     "name": "Holly Flax",
-    "image": "/staff/holly.jpg",
+    "image": "/team/holly.jpg",
     "seasons": [4, 5, 7]
   },
   {
     "name": "Michael Scott",
-    "image": "/staff/michael.jpg",
+    "image": "/team/michael.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7]
   },
   {
     "name": "Jo Benett",
-    "image": "/staff/jo.jpg",
+    "image": "/team/jo.jpg",
     "seasons": [6, 7]
   },
   {
     "name": "Robert California",
-    "image": "/staff/robert.jpg",
+    "image": "/team/robert.jpg",
     "seasons": [8]
   },
   {
     "name": "Charles Miner",
-    "image": "/staff/charles.jpg",
+    "image": "/team/charles.jpg",
     "seasons": [5]
   },
   {
     "name": "Gabe Lewis",
-    "image": "/staff/gabe.jpg",
+    "image": "/team/gabe.jpg",
     "seasons": [6, 7, 8]
   },
   {
     "name": "Karen Filippelli",
-    "image": "/staff/karen.jpg",
+    "image": "/team/karen.jpg",
     "seasons": [3, 4]
   },
   {
     "name": "Andy Bernard",
-    "image": "/staff/andy.jpg",
+    "image": "/team/andy.jpg",
     "seasons": [3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Erin Hannon",
-    "image": "/staff/erin.jpg",
+    "image": "/team/erin.jpg",
     "seasons": [5, 6, 7, 8, 9]
   },
   {
     "name": "Nellie Bertram",
-    "image": "/staff/nellie.jpg",
+    "image": "/team/nellie.jpg",
     "seasons": [8, 9]
   },
   {
     "name": "David Wallace",
-    "image": "/staff/david.jpg",
+    "image": "/team/david.jpg",
     "seasons": [2, 3, 4, 5, 6, 9]
   },
   {
     "name": "Clark Green",
-    "image": "/staff/clark.jpg",
+    "image": "/team/clark.jpg",
     "seasons": [9]
   },
   {
     "name": "Pete Miller",
-    "image": "/staff/pete.jpg",
+    "image": "/team/pete.jpg",
     "seasons": [9]
   },
   {
     "name": "Dwight Schrute",
-    "image": "/staff/dwight.jpg",
+    "image": "/team/dwight.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Jim Halpert",
-    "image": "/staff/jim.jpg",
+    "image": "/team/jim.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Pam Beesly",
-    "image": "/staff/pam.jpg",
+    "image": "/team/pam.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Jan Levinson",
-    "image": "/staff/jan.jpg",
+    "image": "/team/jan.jpg",
     "seasons": [1, 2, 3, 4, 5]
   },
   {
     "name": "Angela Martin",
-    "image": "/staff/angela.jpg",
+    "image": "/team/angela.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Darryl Philbin",
-    "image": "/staff/darryl.jpg",
+    "image": "/team/darryl.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Ryan Howard",
-    "image": "/staff/ryan.jpg",
+    "image": "/team/ryan.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Kelly Karpor",
-    "image": "/staff/kelly.jpg",
+    "image": "/team/kelly.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Roy Anderson",
-    "image": "/staff/roy.jpg",
+    "image": "/team/roy.jpg",
     "seasons": [1, 2, 3]
   },
   {
     "name": "Oscar Martinez",
-    "image": "/staff/oscar.jpg",
+    "image": "/team/oscar.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Kevin Malone",
-    "image": "/staff/kevin.jpg",
+    "image": "/team/kevin.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Stanley Hudson",
-    "image": "/staff/stanley.jpg",
+    "image": "/team/stanley.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Phyllis Vance",
-    "image": "/staff/phyllis.jpg",
+    "image": "/team/phyllis.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Toby Flenderson",
-    "image": "/staff/toby.jpg",
+    "image": "/team/toby.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Creed Bratton",
-    "image": "/staff/creed.jpg",
+    "image": "/team/creed.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   {
     "name": "Meredith Palmer",
-    "image": "/staff/meredith.jpg",
+    "image": "/team/meredith.jpg",
     "seasons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
   }
 ]
