@@ -62,136 +62,69 @@ const Card = styled.div`
   }
 `
 
-/* export const getStaticProps = async () => {
-  const resp = await fetch('http://localhost:3000/api/characters')
-  const data = await resp.json()
-
-  return { props: data }
-} */
-
-const Cards = () => {
-
-  return (
-    <Container>
-      <CardsTeam>
-        <h2>Account</h2>
-        <Card>
-          <Image src="/assets/young-michael.jpg" alt="Young Michael" width={550} height={505} />
-          <div>
-            <h3>Michael Scott</h3>
-            <Link href="/team" passHref>
+const Cards = ({ characters }) => (
+  <Container>
+    <CardsTeam>
+      <h2>Account</h2>
+      {characters.map(
+        (character) =>
+          character.team === 'account' && (
+            <Card key={character.name}>
+              <Image src={character.image} alt={character.name} width={550} height={505} />
               <div>
-                <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
-                <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
+                <h3>{character.name}</h3>
+                <Link href={'/team/' + character.name.replace(' ', '')} passHref>
+                  <div>
+                    <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
+                    <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
+                  </div>
+                </Link>
               </div>
-            </Link>
-          </div>
-        </Card>
-        <Card>
-          <Image src="/assets/young-michael.jpg" alt="Young Michael" width={550} height={505} />
-          <div>
-            <h3>Michael Scott2</h3>
-            <Link href="/team" passHref>
+            </Card>
+          )
+      )}
+    </CardsTeam>
+    <CardsTeam>
+      <h2>Sales</h2>
+      {characters.map(
+        (character) =>
+          character.team === 'sales' && (
+            <Card key={character.name}>
+              <Image src={character.image} alt={character.name} width={550} height={505} />
               <div>
-                <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
-                <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
+                <h3>{character.name}</h3>
+                <Link href={'/team/' + character.name.replace(' ', '')} passHref>
+                  <div>
+                    <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
+                    <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
+                  </div>
+                </Link>
               </div>
-            </Link>
-          </div>
-        </Card>
-        <Card>
-          <Image src="/assets/young-michael.jpg" alt="Young Michael" width={550} height={505} />
-          <div>
-            <h3>Michael Scott</h3>
-            <Link href="/team" passHref>
+            </Card>
+          )
+      )}
+    </CardsTeam>
+    <CardsTeam>
+      <h2>Human Resources</h2>
+      {characters.map(
+        (character) =>
+          character.team === 'hr' && (
+            <Card key={character.name}>
+              <Image src={character.image} alt={character.name} width={550} height={505} />
               <div>
-                <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
-                <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
+                <h3>{character.name}</h3>
+                <Link href={'/team/' + character.name.replace(' ', '')} passHref>
+                  <div>
+                    <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
+                    <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
+                  </div>
+                </Link>
               </div>
-            </Link>
-          </div>
-        </Card>
-        <Card>
-          <Image src="/assets/young-michael.jpg" alt="Young Michael" width={550} height={505} />
-          <div>
-            <h3>Michael Scott</h3>
-            <Link href="/team" passHref>
-              <div>
-                <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
-                <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
-              </div>
-            </Link>
-          </div>
-        </Card>
-      </CardsTeam>
-      <CardsTeam>
-        <h2>Sales</h2>
-        <Card>
-          <Image src="/assets/young-michael.jpg" alt="Young Michael" width={550} height={505} />
-          <div>
-            <h3>Michael Scott</h3>
-            <Link href="/team" passHref>
-              <div>
-                <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
-                <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
-              </div>
-            </Link>
-          </div>
-        </Card>
-        <Card>
-          <Image src="/assets/young-michael.jpg" alt="Young Michael" width={550} height={505} />
-          <div>
-            <h3>Michael Scott2</h3>
-            <Link href="/team" passHref>
-              <div>
-                <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
-                <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
-              </div>
-            </Link>
-          </div>
-        </Card>
-        <Card>
-          <Image src="/assets/young-michael.jpg" alt="Young Michael" width={550} height={505} />
-          <div>
-            <h3>Michael Scott</h3>
-            <Link href="/team" passHref>
-              <div>
-                <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
-                <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
-              </div>
-            </Link>
-          </div>
-        </Card>
-      </CardsTeam>
-      <CardsTeam>
-        <h2>Human Resources</h2>
-        <Card>
-          <Image src="/assets/young-michael.jpg" alt="Young Michael" width={550} height={505} />
-          <div>
-            <h3>Michael Scott</h3>
-            <Link href="/team" passHref>
-              <div>
-                <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
-                <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
-              </div>
-            </Link>
-          </div>
-        </Card>
-        <Card>
-          <Image src="/assets/young-michael.jpg" alt="Young Michael" width={550} height={505} />
-          <div>
-            <h3>Michael Scott2</h3>
-            <Link href="/team" passHref>
-              <div>
-                <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
-                <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
-              </div>
-            </Link>
-          </div>
-        </Card>
-      </CardsTeam>
-    </Container>
-  )
-} 
+            </Card>
+          )
+      )}
+    </CardsTeam>
+  </Container>
+)
 
 export default Cards

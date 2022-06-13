@@ -16,8 +16,8 @@
 - [ ] Página de Personagens
   - [x] Fazer um grid parecido com da NLW Return
   - [x] Aplicar estilização
-  - [ ] Integrar o `getStaticProps`
-  - [ ] Montar o grid com nossos dados
+  - [x] Integrar o `getStaticProps`
+  - [x] Montar o grid com nossos dados
   - [ ] Função de entrar num personagem
 - [ ] Página do personagem
   - [ ] ???

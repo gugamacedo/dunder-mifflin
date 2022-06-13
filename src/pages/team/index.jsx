@@ -1,5 +1,5 @@
-import Header from '../components/Header'
-import Cards from '../components/Cards'
+import Header from '../../components/Header'
+import Cards from '../../components/Cards'
 
 import styled from 'styled-components'
 
@@ -13,28 +13,25 @@ const Heading = styled.h1`
   letter-spacing: 0.5px;
 `
 
-const Characters = () => {
+export async function getStaticProps() {
+  const res = await fetch('http://localhost:3000/api/characters')
+  const characters = await res.json()
+
+  return {
+    props: {
+      characters,
+    },
+  }
+}
+
+const Characters = ({ characters }) => {
   return (
     <>
       <Header />
       <Heading>Company Teams</Heading>
-      <Cards />
+      <Cards characters={characters} />
     </>
   )
 }
 
 export default Characters
-
-/*
-import { useRouter } from 'next/router'
-
-const Glasses = () => {
-  const router = useRouter()
-
-  console.log(router)
-
-  return <h2>ID: {router.query.glasses}</h2>
-}
-
-export default Glasses
-*/
