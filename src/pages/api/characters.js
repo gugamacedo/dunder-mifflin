@@ -1,7 +1,7 @@
 // Next API route
 
 export default function handler(req, res) {
-  const data = [
+  const characters = [
     {
       name: 'Holly Flax',
       image: '/team/holly.jpg',
@@ -178,10 +178,9 @@ export default function handler(req, res) {
     },
   ]
 
-  // const { name } = req.query
+  const { name } = req.query
   
-  // const character = data.find(item => item.name.replace(' ', '') === name) || ''
+  const character = characters.filter(item => item.name === name)
 
-  // res.status(200).json(character === '' ? data : character)
-  res.status(200).json(data)
+  res.status(200).json(character.length === 0 ? characters : character)
 }

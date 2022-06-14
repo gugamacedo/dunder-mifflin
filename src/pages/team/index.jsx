@@ -14,7 +14,7 @@ const Heading = styled.h1`
 `
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/characters')
+  const res = await fetch('http://localhost:3000/api/characters/?name=')
   const characters = await res.json()
 
   return {

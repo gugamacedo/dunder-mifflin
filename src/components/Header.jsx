@@ -30,6 +30,7 @@ const Menu = styled.div`
       text-decoration: none;
       color: ${(props) => props.theme.colors.secondary};
       font-family: ${(props) => props.theme.fonts.primary};
+      font-size: 1.2rem;
 
       :hover {
         background-color: #01213a;
@@ -46,7 +47,7 @@ const Menu = styled.div`
     nav {
       a {
         padding: 30px;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
       }
     }
   }

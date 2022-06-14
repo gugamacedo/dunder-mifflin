@@ -8,16 +8,18 @@ const Container = styled.section`
   width: 90%;
   display: flex;
   gap: 30px;
+  justify-content: space-between;
 `
 
 const CardsTeam = styled.section`
-  border-radius: 25px;
+  border-radius: 20px 20px 20px 0;
   padding: 30px;
   background-color: ${(props) => props.theme.colors.primary};
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  width: 30%;
 
   h2 {
     position: sticky;
@@ -35,23 +37,26 @@ const Card = styled.div`
   top: 60px;
   margin-bottom: 32px;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 25px 25px 25px 0;
   background-color: white;
 
   > span img {
     width: 100% !important;
-    border-radius: 10px;
+    height: 350px !important;
+    object-fit: cover;
+    border-radius: 20px 20px 20px 0;
   }
 
   > div {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px;
+    align-items: center;
+    padding: 5px 15px;
     color: ${(props) => props.theme.colors.primary};
     font-family: ${(props) => props.theme.fonts.secondary};
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.5px;
 
     > div {
@@ -70,10 +75,10 @@ const Cards = ({ characters }) => (
         (character) =>
           character.team === 'account' && (
             <Card key={character.name}>
-              <Image src={character.image} alt={character.name} width={550} height={505} />
+              <Image src={character.image} alt={character.name} width={700} height={"100%"} />
               <div>
                 <h3>{character.name}</h3>
-                <Link href={'/team/' + character.name.replace(' ', '')} passHref>
+                <Link href={'/team/' + character.name} passHref>
                   <div>
                     <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
                     <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
@@ -90,10 +95,10 @@ const Cards = ({ characters }) => (
         (character) =>
           character.team === 'sales' && (
             <Card key={character.name}>
-              <Image src={character.image} alt={character.name} width={550} height={505} />
+              <Image src={character.image} alt={character.name} width={700} height={"100%"} />
               <div>
                 <h3>{character.name}</h3>
-                <Link href={'/team/' + character.name.replace(' ', '')} passHref>
+                <Link href={'/team/' + character.name} passHref>
                   <div>
                     <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
                     <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
@@ -110,10 +115,10 @@ const Cards = ({ characters }) => (
         (character) =>
           character.team === 'hr' && (
             <Card key={character.name}>
-              <Image src={character.image} alt={character.name} width={550} height={505} />
+              <Image src={character.image} alt={character.name} width={700} height={"100%"} />
               <div>
                 <h3>{character.name}</h3>
-                <Link href={'/team/' + character.name.replace(' ', '')} passHref>
+                <Link href={'/team/' + character.name} passHref>
                   <div>
                     <Image src={'/icons/book.svg'} alt={'More info'} width={30} height={30} />
                     <Image src={'/icons/search.svg'} alt={'More info'} width={25} height={25} />
