@@ -1,6 +1,4 @@
-// Next API route
-
-export default function handler(req, res) {
+export default function loadCharacters(name='all') {
   const characters = [
     {
       name: 'Holly Flax',
@@ -178,9 +176,9 @@ export default function handler(req, res) {
     },
   ]
 
-  const { name } = req.query
-  
-  const character = characters.filter(item => item.name === name)
+  if(name === 'all') {
+    return characters
+  }
 
-  res.status(200).json(character.length === 0 ? characters : character)
+  return characters.filter(item => item.name === name)
 }

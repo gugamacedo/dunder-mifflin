@@ -1,7 +1,9 @@
+import styled from 'styled-components'
+
 import Header from '../../components/Header'
 import Cards from '../../components/Cards'
 
-import styled from 'styled-components'
+import loadCharacters from '../../lib/characters'
 
 const Heading = styled.h1`
   margin: 30px 0;
@@ -14,8 +16,9 @@ const Heading = styled.h1`
 `
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/characters/?name=')
-  const characters = await res.json()
+  // const res = await fetch('http://localhost:3000/api/characters/?name=')
+  // const characters = await res.json()
+  const characters = loadCharacters()
 
   return {
     props: {
