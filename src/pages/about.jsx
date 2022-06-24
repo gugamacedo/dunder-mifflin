@@ -174,7 +174,7 @@ const Container = styled.section`
 
 const About = () => (
   <>
-    <Header />
+    <Header title='About' />
     <Container>
       <h1>About us</h1>
       <Slider />

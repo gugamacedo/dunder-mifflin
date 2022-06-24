@@ -39,7 +39,7 @@ const Home = styled.main`
 const Index = () => {
   return (
     <Home>
-      <Header />
+      <Header title='Home' />
       <h2>Limitless paper in a paper World</h2>
     </Home>
   )

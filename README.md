@@ -13,12 +13,12 @@
     - [x] Bug da cor ativa nas bolinhas e arrow
     - [x] Slider Responsivo
     - [x] Diminuir imagens, margens e textos
-- [ ] Página de Personagens
+- [x] Página de Personagens
   - [x] Fazer um grid parecido com da NLW Return
   - [x] Aplicar estilização
   - [x] Integrar o `getStaticProps`
   - [x] Montar o grid com nossos dados
-  - [ ] Função de entrar num personagem
+  - [x] Função de entrar num personagem
 - [ ] Página do personagem
   - [ ] ???
 - [ ] Página Contact

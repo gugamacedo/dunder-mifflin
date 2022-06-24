@@ -16,8 +16,6 @@ const Heading = styled.h1`
 `
 
 export async function getStaticProps() {
-  // const res = await fetch('http://localhost:3000/api/characters/?name=')
-  // const characters = await res.json()
   const characters = loadCharacters()
 
   return {
@@ -30,8 +28,8 @@ export async function getStaticProps() {
 const Characters = ({ characters }) => {
   return (
     <>
-      <Header />
-      <Heading>Company Teams</Heading>
+      <Header title='Team' />
+      <Heading>Our Team</Heading>
       <Cards characters={characters} />
     </>
   )
