@@ -10,19 +10,33 @@ const GlobalStyle = createGlobalStyle`
 
   html, body {
     height: 100%;
-    background-color: #e6e6e6;
+    background-color: #f0f0ff;
+  }
+
+  body::-webkit-scrollbar {
+    width: 10px;
+    height: 100%;
+  }
+
+  body::-webkit-scrollbar-track {
+    background-color: #adbaca;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #15384e;
   }
 `
 
 const theme = {
   colors: {
     primary: '#15384e',
-    secondary: '#f0f0ff'
+    secondary: '#f0f0ff',
+    tertiary: '#adbaca',
   },
   fonts: {
     primary: 'Anton, sans-serif',
-    secondary: 'Lato, sans-serif'
-  }
+    secondary: 'Lato, sans-serif',
+  },
 }
 
 export default function App({ Component, pageProps }) {
