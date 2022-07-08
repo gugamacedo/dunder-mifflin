@@ -224,7 +224,7 @@ export default function loadCharacters(name='all') {
       name: 'Meredith Palmer',
       image: '/team/meredith.jpg',
       seasons: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      occupation: 'Accountant',
+      occupation: 'Customer Service Representative',
       aliases: ['Mary-Beth (by Creed)', 'Fire Girl', 'Floozy', 'Alkie', 'Einstein (Sarcastically)', 'Vomit Mop', 'Floor Meat', 'Flesh Hoover'],
       brand: 'Scranton',
       portrayed: 'Kate Flannery',

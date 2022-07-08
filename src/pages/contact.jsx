@@ -147,6 +147,7 @@ const Form = styled.form`
     font-family: ${(props) => props.theme.fonts.primary};
     letter-spacing: 1px;
     background-color: ${(props) => props.theme.colors.tertiary};
+    cursor: pointer;
   }
 
   @media (min-width: 1900px) {
@@ -275,7 +276,7 @@ const validationSchema = yup.object().shape({
     .string()
     .required('Required field')
     .min(10, 'Minimum length: 10 chars')
-    .max(200, 'Maximum length: 200 chars'),
+    .max(300, 'Maximum length: 300 chars'),
 })
 
 const Contact = () => {
@@ -316,6 +317,7 @@ const Contact = () => {
             width={1000}
             height={570}
             quality={100}
+            priority={true}
           />
           <figcaption>
             sorry, Michael is in jail...
@@ -330,10 +332,10 @@ const Contact = () => {
         </div>
         <Formik
           initialValues={{
-            name: '',
-            email: '',
-            complaint: '',
-            message: '',
+            name: isToasty.complaintName,
+            email: isToasty.complaintEmail,
+            complaint: isToasty.complaintSubject,
+            message: isToasty.complaintMessage,
           }}
           validationSchema={validationSchema}
           onSubmit={submitSucess}
