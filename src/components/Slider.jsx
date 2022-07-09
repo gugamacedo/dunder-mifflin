@@ -10,13 +10,13 @@ const SlideShow = styled.div`
   }
 
   .rec.rec-arrow:focus {
-    background-color: rgba(103,58,183,0.1);
+    background-color: rgba(103, 58, 183, 0.1);
     color: #333;
   }
-  
+
   .rec.rec-arrow:enabled:hover {
     background-color: ${(props) => props.theme.colors.primary} !important;
-    color: ${(props) => props.theme.colors.secondary} !important;  
+    color: ${(props) => props.theme.colors.secondary} !important;
   }
 
   @media (min-width: 1900px) {
@@ -54,7 +54,6 @@ const SlideShow = styled.div`
       margin: 0;
     }
   }
-  
 `
 
 const Slides = styled.div`
@@ -87,64 +86,24 @@ const Slides = styled.div`
   }
 `
 
-const Slider = () => {
-  const items = [
-    {
-      path: '/slides/6.jpg',
-      alt: 'Kill Michael',
-      width: 1360,
-      height: 720,
-    },
-    {
-      path: '/slides/4.jpg',
-      alt: 'Jim and Dwight',
-      width: 1360,
-      height: 720,
-    },
-    {
-      path: '/slides/3.jpg',
-      alt: 'Michael Tots',
-      width: 1304,
-      height: 720,
-    },
-    {
-      path: '/slides/2.jpg',
-      alt: 'Michael Scott and Jim Halpert',
-      width: 1318,
-      height: 720,
-    },
-    {
-      path: '/slides/1.jpg',
-      alt: 'Christimas',
-      width: 1335,
-      height: 720,
-    },
-    {
-      path: '/slides/5.jpg',
-      alt: 'Daryl and others',
-      width: 1280,
-      height: 720,
-    },
-  ]
-
+const Slider = ({ slides }) => {
   return (
-    <SlideShow>
-      <Carousel itemsToShow={1}>
-        {items.map((item) => (
-          <Slides key={item.alt}>
-            <Image
-              src={item.path}
-              quality={100}
-              alt={item.alt}
-              width={item.width}
-              height={item.height}
-              priority={item.alt === 'Kill Michael' ? true : false}
-            />
-          </Slides>
-        ))}
-      </Carousel>
-    </SlideShow>
-  )
-}
+  <SlideShow>
+    <Carousel itemsToShow={1}>
+      {slides.map((slide) => (
+        <Slides key={slide.alt}>
+          <Image
+            src={slide.path}
+            quality={100}
+            alt={slide.alt}
+            width={slide.width}
+            height={slide.height}
+            priority={slide.alt === 'Kill Michael' ? true : false}
+          />
+        </Slides>
+      ))}
+    </Carousel>
+  </SlideShow>
+)}
 
 export default Slider
