@@ -22,7 +22,7 @@ const SlideShow = styled.div`
   @media (min-width: 1900px) {
     .rec.rec-arrow {
       width: 100px;
-      height: 100px;
+      height: 90px;
       font-size: 3rem;
     }
   }
@@ -60,21 +60,27 @@ const Slides = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 540px;
   width: 100%;
   background-color: ${(props) => props.theme.colors.primary};
   color: #fff;
   margin: 15px;
   font-size: 4em;
   pointer-events: none;
+  max-width: 1200px;
+
 
   @media (min-width: 1900px) {
     height: 720px;
     max-width: 1600px;
   }
 
-  @media (max-width: 1199px) {
-    height: 400px;
+  @media (max-width: 1300px) {
+    height: 480px;
+  }
+
+  @media (max-width: 1100px) {
+    height: 420px;
 
     span {
       height: 100% !important;
@@ -98,7 +104,6 @@ const Slider = ({ slides }) => {
             alt={slide.alt}
             width={slide.width}
             height={slide.height}
-            priority={slide.alt === 'Kill Michael' ? true : false}
           />
         </Slides>
       ))}

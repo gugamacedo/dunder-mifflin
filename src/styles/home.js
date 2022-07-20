@@ -16,7 +16,7 @@ const Home = styled.main`
     color: ${(props) => props.theme.colors.secondary};
     font-weight: 400;
     font-family: ${(props) => props.theme.fonts.primary};
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-shadow: -1px -1px 10px ${(props) => props.theme.colors.primary},
       -1px 1px 10px ${(props) => props.theme.colors.primary},
       1px -1px 10px ${(props) => props.theme.colors.primary},
@@ -24,7 +24,13 @@ const Home = styled.main`
     letter-spacing: 0.25rem;
   }
 
-  @media (max-width: 576px) {
+  @media (min-width: 2000px) {
+    h2 {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
     background-position: center;
 
     h2 {

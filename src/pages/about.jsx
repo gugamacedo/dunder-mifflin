@@ -7,14 +7,20 @@ import { Container, HistoryImgWrapper, DiversityGrid } from '../styles/about'
 export async function getStaticProps() {
   const slides = [
     {
-      path: '/slides/6.jpg',
-      alt: 'Kill Michael',
-      width: 1360,
+      path: '/slides/1.jpg',
+      alt: 'Christimas',
+      width: 1335,
       height: 720,
     },
     {
       path: '/slides/4.jpg',
       alt: 'Jim and Dwight',
+      width: 1360,
+      height: 720,
+    },
+    {
+      path: '/slides/6.jpg',
+      alt: 'Kill Michael',
       width: 1360,
       height: 720,
     },
@@ -28,12 +34,6 @@ export async function getStaticProps() {
       path: '/slides/2.jpg',
       alt: 'Michael Scott and Jim Halpert',
       width: 1318,
-      height: 720,
-    },
-    {
-      path: '/slides/1.jpg',
-      alt: 'Christimas',
-      width: 1335,
       height: 720,
     },
     {

@@ -58,6 +58,7 @@ const Menu = styled.div`
       display: inline-block;
       background-color: inherit;
       z-index: 5;
+      margin-right: 10px;
     }
 
     div img {
