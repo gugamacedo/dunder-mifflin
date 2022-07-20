@@ -11,47 +11,64 @@ const Character = ({ character }) => {
       <Header title={character.name} />
       <Container>
         <Card>
-          <Image
-            src={character.image}
-            alt={character.name}
-            width={700}
-            height={'100%'}
-            quality={100}
-          />
           <div>
             <h1>{character.name}</h1>
-            <p>
-              <b>Occupation: </b>
+
+            <Image
+              src={character.image}
+              alt={character.name}
+              width={700}
+              height={'100%'}
+              quality={100}
+            />
+          </div>
+          <div>
+            <div>
+              <strong>Occupation: </strong>
               {character.occupation}
-            </p>
-            <p>
-              <b>Portrayed by: </b>
+            </div>
+            <div>
+              <strong>Portrayed by: </strong>
               {character.portrayed}
-            </p>
-            <p>
-              <b>Initial brand: </b>
+            </div>
+            <div>
+              <strong>Initial brand: </strong>
               {character.brand}
-            </p>
-            <b>Aliases:</b>
-            <ul>
-              {character.aliases.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <p>
-              <b>First episode: </b>
+            </div>
+            <div>
+              <strong>First episode: </strong>
               {character.firstEp}
-            </p>
-            <p>
-              <b>Seasons: </b>
+            </div>
+            <div>
+              <strong>Seasons: </strong>
               {character.seasons.map((item) => (
                 <span key={item}>{item} | </span>
               ))}
-            </p>
-            <p>
-              <b>Trivia: </b>
+            </div>
+            <div>
+              <strong>Aliases:</strong>
+              <ul>
+                {character.aliases.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            {character.quotes.length !== 0 && (
+              <div>
+                <strong>Quotes:</strong>
+                <ul>
+                  {character.quotes.map((item, index) => (
+                    <li key={index}>
+                      <q>{item}</q>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            <div>
+              <strong>Trivia: </strong>
               {character.trivia}
-            </p>
+            </div>
           </div>
         </Card>
       </Container>

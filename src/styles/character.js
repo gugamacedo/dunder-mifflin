@@ -18,37 +18,41 @@ export const Card = styled.div`
   gap: 30px;
   padding: 50px 30px 30px;
 
-  > span img {
+  h1 {
+    color: ${(props) => props.theme.colors.secondary};
+    font-family: ${(props) => props.theme.fonts.primary};
+    letter-spacing: 0.8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  > div:first-child span img {
     width: 100% !important;
     height: 450px !important;
     object-fit: cover;
     border-radius: 20px 20px 20px 0;
   }
 
-  > div {
+  > div:last-child {
     background-color: ${(props) => props.theme.colors.secondary};
     font-family: ${(props) => props.theme.fonts.secondary};
-    padding: 20px;
+    padding: 30px;
     font-size: 1rem;
     border-radius: 20px 20px 20px 0;
 
-    h1 {
-      color: ${(props) => props.theme.colors.primary};
-      font-family: ${(props) => props.theme.fonts.primary};
-      letter-spacing: 0.5px;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 1.6rem;
-    }
-
-    b {
+    strong {
       color: ${(props) => props.theme.colors.primary};
       font-size: 1.1rem;
     }
 
-    p {
-      margin: 25px 0;
-      line-height: 25px;
+    div {
+      padding: 10px;
+      margin: 30px 0;
+      line-height: 20px;
+      border: 2px solid ${(props) => props.theme.colors.tertiary};
+      border-radius: 15px;
     }
 
     ul {
@@ -71,17 +75,33 @@ export const Card = styled.div`
 
       li {
         list-style-type: square;
-        margin: 10px 0 0 20px;
+        margin: 10px 0 20px 20px;
+        line-height: 20px;
+        padding: 0 20px 0 0;
 
         ::marker {
           color: ${(props) => props.theme.colors.primary};
           font-size: 1rem;
         }
+
+        q {
+          display: block;
+          text-align: justify;
+        }
+      }
+
+      li:last-child {
+        margin-bottom: 0;
       }
     }
 
-    p:last-child {
-      margin: 0;
+    div:first-child,
+    div:last-child {
+      margin: 0px;
+    }
+
+    div:last-child {
+      text-align: justify;
     }
   }
 
@@ -90,24 +110,25 @@ export const Card = styled.div`
     padding: 50px;
     gap: 40px;
 
-    > span img {
+    h1 {
+      font-size: 2.4rem;
+      letter-spacing: 2px;
+    }
+
+    > div:first-child span img {
       height: 600px !important;
     }
 
-    > div {
+    > div:last-child {
       padding: 40px;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
 
-      h1 {
-        font-size: 2rem;
+      strong {
+        font-size: 1.8rem;
       }
 
-      b {
-        font-size: 1.6rem;
-      }
-
-      p {
-        margin: 35px 0;
+      div {
+        margin: 50px 0;
         line-height: 40px;
       }
 
@@ -119,11 +140,15 @@ export const Card = styled.div`
         }
 
         li {
-          margin: 20px 0 0 30px;
+          margin: 20px 0 40px 40px;
 
           ::marker {
             font-size: 1.5rem;
           }
+        }
+
+        q {
+          line-height: 40px;
         }
       }
     }
@@ -133,13 +158,22 @@ export const Card = styled.div`
     width: 90%;
   }
 
-  @media (max-width: 670px) {
+  @media (max-width: 700px) {
     grid-template-columns: 1fr;
+    padding: 25px;
   }
 
-  @media (max-width: 400px) {
-    > span img {
-      height: 350px !important;
+  @media (max-width: 425px) {
+    > div:last-child {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    > div:first-child span img {
+      height: 300px !important;
     }
   }
 `
