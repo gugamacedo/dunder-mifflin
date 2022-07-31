@@ -5,7 +5,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 import Header from '../components/Header'
-import { Container, Form, Wrapper, Toasty } from '../styles/contact'
+import { Container, Form, Wrapper, Toasty } from '../styles/pages/contact'
 
 const validationSchema = yup.object().shape({
   name: yup
@@ -55,7 +55,7 @@ const Contact = () => {
 
   return (
     <>
-      <Header />
+      <Header title="Contact" />
       <Container>
         <div>
           <h1>Dunder Mifflin, this is Pam!</h1>

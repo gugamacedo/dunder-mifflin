@@ -1,6 +1,6 @@
 import Header from '../../components/Header'
 import Cards from '../../components/Cards'
-import Heading from '../../styles/team'
+import Heading from '../../styles/pages/team'
 
 import loadCharacters from '../../lib/characters'
 

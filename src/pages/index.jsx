@@ -1,5 +1,5 @@
 import Header from '../components/Header'
-import Home from '../styles/home'
+import Home from '../styles/pages/home'
 
 const Index = () => {
   return (

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import loadCharacters from '../../lib/characters'
 
 import Header from '../../components/Header'
-import { Container, Card } from '../../styles/character'
+import { Container, Card } from '../../styles/pages/character'
 
 const Character = ({ character }) => {
   return (

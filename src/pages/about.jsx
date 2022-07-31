@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import Header from '../components/Header'
 import Slider from '../components/Slider'
-import { Container, HistoryImgWrapper, DiversityGrid } from '../styles/about'
+import { Container, HistoryImgWrapper, DiversityGrid } from '../styles/pages/about'
 
 export async function getStaticProps() {
   const slides = [

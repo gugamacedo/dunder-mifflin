@@ -9,7 +9,7 @@ export default function loadCharacters(name = 'all') {
       brand: 'Nashua',
       portrayed: 'Amy Ryan',
       firstEp: 'Goodbye, Toby',
-      quotes: [],
+      quotes: ['Everything he does is sexy. He has this undeniable animal magnetism, he\'s a jungle cat. The man exudes Sex!', 'Your wife becoming...be will I.'],
       trivia:
         'Holly was introduced to be the first person who actually liked Michael, allowing his character to mature. She was not intended to be his life partner, and was planned to be in only six episodes.',
     },
@@ -58,6 +58,7 @@ export default function loadCharacters(name = 'all') {
       firstEp: 'Pilot',
       quotes: [
         'If I had a gun with two bullets and I was in a room with Hitler, Bin Laden, and Toby, I would shoot Toby twice.',
+        'Marrying me will you be?',
         'Occasionally, I’ll hit somebody with my car. So sue me.',
         'Everybody stay calm! Stay f*&#!#% calm!',
         'And I knew exactly what to do. But in a much more real sense, I had no idea what to do.',
@@ -649,7 +650,7 @@ export default function loadCharacters(name = 'all') {
       brand: 'Dunder Mifflin',
       portrayed: 'Idris Elba',
       firstEp: 'New Boss',
-      quotes: [],
+      quotes: ['I am aware of the effect I have on Women'],
       trivia:
         'In "Secret Santa" all of corporate is fired, including Charles Miner and David Wallace by a company called Sabre. In "Viewing Party," when Michael is listing all his former bosses, he mentions Charles when he says "Charles was fired."',
     },
@@ -714,7 +715,7 @@ export default function loadCharacters(name = 'all') {
       brand: 'Scranton',
       portrayed: 'David Koechner',
       firstEp: 'Sexual Harassment',
-      quotes: [],
+      quotes: ['What has two thumbs and likes to bone your mom? This guy!'],
       trivia:
         "Fed up with Packer's presence in the office, Jim and Dwight prank Packer into leaving Dunder Mifflin and transferring to Sabre's corporate headquarters in Tallahassee, letting him quit to head out to the nonexistent job offer.",
     },

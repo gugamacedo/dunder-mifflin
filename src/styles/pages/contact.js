@@ -13,6 +13,9 @@ export const Container = styled.div`
     align-items: center;
     font-weight: bold;
     color: ${(props) => props.theme.colors.primary};
+    font-family: ${(props) => props.theme.fonts.primary};
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 
     h1 {
       margin: 30px 0;
@@ -26,7 +29,7 @@ export const Container = styled.div`
 
     figcaption {
       padding: 10px 0;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
 
       span img {
         border-radius: 50%;
@@ -63,7 +66,7 @@ export const Container = styled.div`
       }
 
       > span img {
-        height: 250px !important;
+        height: 200px !important;
       }
 
       figcaption {
